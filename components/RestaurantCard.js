@@ -1,8 +1,9 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import { StarIcon } from 'react-native-heroicons/solid'
+import { StarIcon, LocationMarkerIcon } from 'react-native-heroicons/solid'
+import { MapIcon, MapPinIcon } from 'react-native-heroicons/outline'
 
-const RestaurantCard = ({id, imgUrl, Title,Genre, Address}) => {
+const RestaurantCard = ({id,address ,imgUrl, Title,Rating,Genre, Address}) => {
   return (
     <TouchableOpacity>
       <Image 
@@ -11,7 +12,14 @@ const RestaurantCard = ({id, imgUrl, Title,Genre, Address}) => {
       />
       <View className="px-3 pb-4">
         <Text className="font-bold text-lg pt-2">{Title}</Text>
-        <View><StarIcon color="black" opacity={0.5}/></View>
+        <View  className="flex-row items-center space-x-2">
+          <StarIcon color="black" opacity={0.5}/>
+          <Text className="text-xs">{Rating} <Text >{Genre}</Text></Text>
+        </View>
+        <View className="flex-row items-center">
+          <MapPinIcon  color="#000000"/>
+          <Text className="text-xs text-gray-500">Nearby . {address}</Text>
+        </View>
       </View>
     </TouchableOpacity>
   )
