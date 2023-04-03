@@ -96,10 +96,10 @@ const [cat,setCat]=useState("")
  
     useEffect(()=>{
       // const interval=setInterval(()=>{
-        // AllTypes()
+        Restos()
        
         
-      // },500)
+    //   },50000)
     //  return ()=>clearInterval(interval)
     },[])
 //  setTimeout(()=>AllTypes(),30000

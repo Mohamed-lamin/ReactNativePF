@@ -80,7 +80,7 @@ console.log("it is ok");
         <TouchableOpacity className="flex-row items-center space-x-2 p-4 border-y border-gray-300">
           <QuestionMarkCircleIcon color="gray" opacity={0.6} size={20}/>
           <Text className="pl-2 flex-1 text-md font-bold">
-            Avez vous une alergie ?
+            Avez vous une allergie ?
           </Text>
           <ChevronRightIcon color="black"/>
         </TouchableOpacity>

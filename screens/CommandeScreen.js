@@ -36,7 +36,7 @@ const CommandeScreen = () => {
 useEffect(()=>{
   // const inter=setInterval(()=>{
     Verif()
-  // },30000);
+//   },50000);
 //  ()=>clearInterval(inter)
   
 },[])
